@@ -2,7 +2,7 @@
  * This file contains a few exercises to familiarize you with Java.
  * You should read this file from top-to-bottom. Any tasks you are to complete
  * are labelled with TODO
- *
+ * <p>
  * For your convenience, we have also included references to the
  * relevant readings for each task.
  */
@@ -113,7 +113,7 @@ public class Basics {
      *
      * @param to_split   A string containing EXACTLY 7 words, separated by
      *                   spaces.
-     * @return           The first letter of every word in to_split
+     * @return The first letter of every word in to_split
      */
     public static String split(String to_split) {
         /* TODO (Task 4): Complete this method body.
@@ -125,7 +125,7 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
         String[] temp = to_split.split(" ");
-        for (int x = 0; x < 7; x++){
+        for (int x = 0; x < 7; x++) {
             ret.append(temp[x].charAt(0));
         }
 
@@ -147,14 +147,14 @@ public class Basics {
      * (Relevant readings: 1.6. Arrays and 1.8.2. for Loops)
      *
      * @param arr    An array of integers
-     * @return       The sum of all integers at odd indices in arr
+     * @return The sum of all integers at odd indices in arr
      */
     public static int oddSum(int[] arr) {
         int current_sum = 0;
         int len = arr.length;
 
-        if (len > 1){
-            for (int y = 1; y < len; y += 2){
+        if (len > 1) {
+            for (int y = 1; y < len; y += 2) {
                 current_sum += arr[y];
             }
         }
